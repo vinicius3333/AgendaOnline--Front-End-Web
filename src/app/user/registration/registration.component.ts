@@ -38,6 +38,7 @@ export class RegistrationComponent implements OnInit {
       company: ['', Validators.required],
       marketSegment: ['', Validators.required],
       imagemPerfil: [''],
+      cidade: ['', Validators.required],
       abertura: ['', Validators.required],
       fechamento: ['', Validators.required],
       duracao: [''],

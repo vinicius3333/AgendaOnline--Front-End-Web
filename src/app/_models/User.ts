@@ -7,6 +7,7 @@ export class User {
     company: string;
     marketSegment: string;
     imagemPerfil: string;
+    cidade: string;
     abertura: Time;
     fechamento: Time;
     duracao: Time;

@@ -60,6 +60,19 @@
         </div>
       </div>
 
+      <div class="form-group">
+        <label for="">Cidade:</label>
+        <input class="form-control" type="text" formControlName="cidade"
+          [ngClass]="{'is-invalid': registerForm.get('cidade').errors &&
+                                    registerForm.get('cidade').touched}"
+          placeholder="Insira o nome da Cidade da sua Empresa"/>
+        <div *ngIf="registerForm.get('cidade').hasError('required') &&
+                    registerForm.get('cidade').touched"
+          class="invalid-feedback">
+          Cidade é obrigatória.
+        </div>
+      </div>
+
       <div class="form-row">
         <div class="form-group col-md-9">
           <input type="file" 
