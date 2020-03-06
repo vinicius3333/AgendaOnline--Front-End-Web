@@ -1,6 +1,6 @@
 <br>
 <div class="text-center">
-  <h1> Lista Agendas </h1>
+  <h1> Agenda Onliners </h1>
 </div>
 <div class="d-flex">
   <div class="form-inline mr-auto">
@@ -17,7 +17,7 @@
       <table class="table table-bordered text-center">
         <thead class="thead-light">
           <tr class="text-center" >
-            <th colspan="9" class="dateHeader" style="background-color:#e95420; color:white;font-size:larger;">Data do Serviço</th>
+            <th colspan="9" class="dateHeader" style="background-color:#e95420; color:white;font-size:larger;">Empresas</th>
           </tr>
           <tr>
             <th>
@@ -25,7 +25,6 @@
                 <i class="{{mostrarImagem ? 'fa fa-eye-slash' : 'fa fa-eye'}}"></i>
               </button>
             </th>
-            <th>#</th>
             <th>Empresa</th>
             <th>Segmento</th>
             <th>Abertura</th>
@@ -40,12 +39,11 @@
               <img *ngIf="mostrarImagem" src="http://localhost:5000/resources/images/{{usuario.imagemPerfil}}?_ts={{dataAtual}}"
               [style.width.px]="imagemLargura" [style.margin.px]="imagemMargem">
             </td>
-            <td>{{usuario.id}}</td>
             <td>{{usuario.company}}</td>
             <td>{{usuario.marketSegment}}</td>
-            <td>{{usuario.abertura | DateTimeFormatPipe}}</td>
-            <td>{{usuario.fechamento | DateTimeFormatPipe}}</td>
-            <td>{{usuario.duracao | DateTimeFormatPipe}}</td>
+            <td>{{usuario.abertura}}</td>
+            <td>{{usuario.fechamento}}</td>
+            <td>{{usuario.duracao}}</td>
             <td>
               <!-- <a [routerLink]="['/evento', usuario.id, 'edit']" tooltip="Edição Detalhada" class="btn btn-sm btn-warning"> -->
                 <i class="fa fa-edit"></i>

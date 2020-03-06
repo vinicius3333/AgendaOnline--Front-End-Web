@@ -7,3 +7,7 @@
 #toastr-container > div {
     opacity:1;
 }
+
+.bg-dark {
+    background-color: #2aaae2 !important;
+}
