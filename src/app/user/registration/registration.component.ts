@@ -40,7 +40,7 @@ export class RegistrationComponent implements OnInit {
       imagemPerfil: [''],
       abertura: ['', Validators.required],
       fechamento: ['', Validators.required],
-      duracao: ['', Validators.required],
+      duracao: [''],
       userName: ['', Validators.required],
       passwords: this.fb.group({
         password: ['', [Validators.required, Validators.minLength(4)]],
